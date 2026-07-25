@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">                  <!-- 標準テキストUTF-8で保存したもの -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- ===タイトルページ=== -->
+  <title>「重信」での農作業記</title>
+<!-- ===ページ説明（SEO)=== -->
+<meta name="description" content="東温市牛渕（旧重信朝）で農作業をしている年金生活者です。前畑で続けている農作業について、土壌の管理、野菜の栽培、草刈りなどについて、毎年のルーチンワークの指標としてまとめています。">
+                                                      <!-- 検索数増加など、完成度が上がる命令 -->
+<!-- ===Googleアナリティクス=== -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QBCN7C4WR8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-QBCN7C4WR8');
+  </script>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN",
+               "Yu Gothic", Meiryo, sans-serif;
+  background-color: #f5f7f8;
+  color: #333;
+  line-height: 1.8;
+}
+.container {                   /* パソコンなど、画面が広い時、中心にコンパクトに表示 */
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1 {
+  font-size: 1.8em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.lead p {                 /* lead文章の指定 */
+  text-indent: 0;
+}
+.lead {
+  font-size: 1em;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+ul.menu {           /* ulメニューの指定 */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+ul.menu li {
+  margin-bottom: 6px;
+}
+ul.menu a {
+  display: block;
+  padding: 6px 10px 6px 16px;
+  background: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #006699;
+  font-size: 0.95em;
+  line-height: 1.6;
+  border-left: 6px solid #006699;
+}
+ul.menu a:hover {
+  background: #eef6fa;
+}
+.small {                       /* 公開日や補足説明など、小さく表示する時 */
+  font-size: 0.9em;
+  color: #555;
+}
+.news-line {              /*【新着情報】〇〇、上下に強調ラインがつく */
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 4px 0;
+  margin: 10px 0;
+  font-weight: bold;
+}
+footer {               /* footer、©︎〇〇などを入れる */
+  text-align: center;
+  font-size: 0.85em;
+  color: #666;
+  margin-top: 40px;
+}
+header img {             /* ヘッダーについて */
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+.hero{                     /* ヘッダー画像を変化させるため */
+position:relative;
+width:100%;
+height:310px;
+overflow:hidden;
+}
+.hero-image{
+position:absolute;
+width:100%;
+height:100%;
+object-fit:cover;
+opacity:0;
+transition:opacity 2s;
+}
+.hero-image.active{
+opacity:1;
+}
+.hero::before{
+content:"";
+position:absolute;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.25);
+z-index:1;
+}
+.hero-text{               /* ヘッダー画像に文字を入れる */
+position:absolute;
+
+z-index:2;
+color:white;
+left:8%;                  /* 左寄りにする */
+top:50%;
+transform:translateY(-50%);
+text-align:left;
+width:80%;
+}
+.hero-text h1{
+font-size:2.5rem;
+color:white;
+text-shadow:
+2px 2px 4px rgba(0,0,0,0.7);
+margin-bottom:10px;
+}
+.hero-text p{
+font-size:1.5rem;
+color:white;
+text-shadow:
+1px 1px 3px rgba(0,0,0,0.7);
+}
+@media (max-width:600px){                       /* ===スマホ用=== */
+  body{
+    font-size:16px;
+  }
+  nav{
+    flex-direction:column;
+    align-items:center;
+  }
+  nav a{
+    width:80%;
+    text-align:center;
+  }
+  .text-image{
+    flex-direction:column;
+  }
+  .text-image img{
+    width:100%;
+  }
+  .hero{
+    height:220px;
+  }
+  .hero-text{
+    left:5%;
+    width:90%;
+  }
+  .hero-text h1{
+    font-size:2rem;
+  }
+  .hero-text p{
+    font-size:1rem;
+  }
+}
+  </style>
+</head>
+
+<body>
+<div class="container">                <!-- コンテナーに入れる -->
+
+<header class="hero">                 <!-- ヘッダー画像を変化させる -->
+<img src="header1.jpg" class="hero-image active" alt="とうもろこし栽培">
+<img src="header2.jpg" class="hero-image" alt="トマト栽培">
+<img src="header3.jpg" class="hero-image" alt="きゅうり栽培">
+
+<div class="hero-text">                <!-- ヘッダー画像に共通して表示するテキスト -->
+<h1>「重  信」での「農 作 業 記」</h1>
+<p>「土地管理」、「野菜の栽培」、「草刈り」など日々の農作業について</p>
+</div>
+</header>
+<!-- ===メインコンテンツ=== -->
+<main>
+<p class="small">公開日：2026年7月　｜　最終更新：2026年7月</p>
+<!-- 導入文 -->
+<div class="lead">
+<p>
+愛媛県東温市（旧重信町）で、農業「素人」（年金生活者）が、日々「雑草」との戦いに汗を流しながら「前畑」で野菜栽培を行っています。
+</p>
+<p>
+<strong>日々の農作業のプロトコル</strong>を手軽に、スマホでも引き出せるように、一つのホームページにまとめました。        <!-- strong：強調ボルド -->
+</p>
+</div>
+
+<!-- セクション -->
+<section>
+<h2>土地管理、除草、カメムシ対策など</h2>
+<nav>
+<ul class="menu">
+<li><a href="(101)land_management.html">1）　土地管理</a></li>
+<li><a href="(102)weeding.html">2）　除草</a></li>
+<li><a href="(111)stink_bug_control.html">3）　カメムシ対策</a></li>
+</ul>
+</nav>
+</section>
+<hr>
+
+<section>
+<h2>野菜の栽培</h2>
+<nav>
+<ul class="menu">
+<li><a href="(103)corn.html">4)　とうもろこし栽培</a></li>
+<li><a href="(104)cherry_tomatoes.html">5)　ミニトマト栽培</a></li>
+<li><a href="(105)cucumber.html">6）　きゅうり栽培</a></li>
+<li><a href="(106)sweet_potato.html">7）　さつまいも栽培</a></li>
+<li><a href="(107)onion.html">8)　玉ねぎ栽培</a></li>
+<li><a href="(108)snow_peas.html">9)　サヤエンドウ栽培</a></li>
+<li><a href="(109)bitter_gourd.html"> 10)　ゴーヤ栽培</a></li>
+<li><a href="(112)in_the_former_onion_field.html">11)　玉ねぎの跡地に（かぼちゃ、スイカ、枝豆）</a></li>
+</ul>
+</nav>
+</section>
+<hr>
+
+<section>
+<h2>１年間のスケジュール</h2>
+<nav>
+<ul class="menu">
+<li><a href="(113)anual_schedule.html"> 年間スケジュール</a></li>
+</ul>
+</nav>
+</section>
+
+</main>
+<!-- ===フッター=== -->
+<footer>
+      © 「重信」での農作業記
+</footer>
+
+</div>
+<!-- header画像が動くための命令 -->
+<script>
+const images = document.querySelectorAll('.hero-image');
+let current = 0;
+setInterval(() => {
+images[current].classList.remove('active');
+current++;
+if(current >= images.length){
+current = 0;
+}
+images[current].classList.add('active');
+}, 5000);
+</script>
+
+</body>
+</html>

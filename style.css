@@ -1,0 +1,200 @@
+/* ===== 基本設定 ===== */
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  line-height:1.7;
+  color:#333;
+  margin:0;
+  background:#ffffff;
+}
+/* ===== ヘッダー ===== */
+header{                          /* ヘッダーに色付けをする */
+  background: linear-gradient(135deg, #2a5d84, #3f7fb0);
+  color:white;
+  padding:20px 0;
+  text-align:center;
+}
+/* 内側の幅調整 */
+.header-inner{              /* ヘッダー内にタイトルh1を入れる */
+  max-width:800px;
+  margin:auto;
+  padding:0 12px;
+}
+/* タイトル */
+header h1{
+  margin:0;
+  font-size:1.5em;
+  color:white;
+}
+/* ===== 本文コンテナ ===== */
+.container{                /* 本文をコンテナーに入れるとPCで綺麗に表示される */
+  max-width:900px;
+  margin:auto;
+  padding:12px;
+}
+/* ===== 見出し ===== */
+h1,h2,h3{
+  color:#2a5d84;
+}
+h1{
+  margin-bottom:0.8em;
+}
+h2{
+  margin-top:1.8em;
+  margin-bottom:0.5em;
+  font-size:1.3em;
+}
+h3{
+  font-size:1.1em;
+  margin-top:1.2em;
+}
+/* ===== 段落 ===== */
+p{                                 /* 本文の文章、<p>〇〇〇〇</p>と記入する */
+  margin-bottom:1em;
+}
+/* 文章の最初を1文字下げる */
+.indent{
+  text-indent:1em;
+}
+/* ===== 小さめ文字 ===== */
+.small{
+  font-size:0.9em;
+  color:#333;
+}
+/* ===== トップリンク ===== */
+.back-link{                      /*「トップページに戻る」などバックリンクする場合に */
+  margin:10px 0 18px 0;
+}
+/* ===== ボックス共通（引き締め） ===== */
+.box,                          /* 強調したい時に、column > box > note の順で使う*/
+.note,                         /* それぞれ色付きラインで囲まれる */
+.column{
+  margin:10px 0;
+  border-radius:5px;
+}
+/* ボックス 強調*/
+.box {
+  background-color: #fff3e0;
+  border: 2px solid #ff9800;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+/* たまにつかう補足*/
+.note {
+  background-color: #f9f9f9;
+  border: 2px solid #999;
+  padding: 10px;
+  border-radius: 10px;
+}
+/* コラム（基本、専門的） */
+.column {
+  background-color: #f0f8ff;
+  border: 2px solid #2196F3;
+  padding: 12px;
+  border-radius: 10px;
+}
+/* それぞれのタイトル　*/
+.column-title {             /* それぞれにタイトルをつけたい時に */
+  font-weight: bold;
+  color: #1565c0;
+}
+.box-title {
+  font-weight: bold;
+  color: #e65100;
+}
+.note-title {
+  font-weight: bold;
+  color: #666;
+  font-size: 0.9em;
+}
+/* ===== 箇条書き ===== */
+ul,ol{                 /*  ul：点が文章の前につく、ol：数字が文の前につく */
+  padding-left:1.2em;
+}
+li{
+  margin-bottom:0.3em;
+}
+/* ===== 画像 ===== */
+img{                   /* 画像について */
+  max-width:500px;
+  width:100%;
+  height:auto;
+  display:block;
+  margin:16px auto;
+}
+/* ===== 区切り線 ===== */
+hr.divider{                     /* 区切り線を入れるとき */
+  border:none;
+  border-top:1px solid #ccc;
+  margin:2em 0 1em;
+}
+/* ===== 表（テーブル） ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 0.95em;
+}
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f1f8ff;
+}
+/* ===== フッター ===== */
+footer{                            /* フッターの表示について */
+  text-align:center;
+  font-size:0.8em;
+  color:#666;
+  margin:30px auto;
+  max-width:900px;
+}
+/* ===== スマホ対応 ===== */
+@media (max-width:600px){
+  body{
+    font-size:16px;
+    line-height:1.8;
+    color: #000;
+  }
+  h1{
+    font-size:1.4em;
+  }
+  h2{
+    font-size:1.2em;
+  }
+  .container{
+    padding:10px;
+  }
+  .box,
+  .note,
+  .column{
+    padding:8px;
+    margin:8px 0;
+  }
+}
+/* ここまで既存のCSS */
+@media print {
+    body {
+        background: #ffffff;
+        color: #000000;
+        font-size: 12pt;
+    }
+    .box {
+        border: 1px solid #000;
+        background: none;
+        padding: 10px;
+    }
+    .box-title {
+        color: #000;
+        font-size: 14pt;
+    }
+    .note {
+        font-size: 10pt;
+        color: #000;
+    }
+    header, nav, footer {
+        display: none;
+    }
+}
