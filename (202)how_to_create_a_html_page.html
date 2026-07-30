@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>htmlページの作製方法｜html言語を習得します</title>
+<meta name="description" content="html言語でホームページを作成する方法を学びます。">
+<link rel="stylesheet" href="style.css">       <!-- style.cssを使う命令 -->
+</head>
+
+<body>
+<header>
+  <div class="header-inner">
+     <h1>htmlページの作製方法｜html言語を習得します</h1>
+  </div>
+</header>
+
+<div class="container">                <!-- コンテナーに入れる、最後に</div>がある -->
+<div class="back-link">                 <!-- 「トップページに戻る」を入れる -->
+<a href="index.html">トップページに戻る</a>
+</div>
+
+<p class="small">
+公開日：2026年7月　｜　最終更新：2026年7月
+</p>
+<!-- ===メインコンテンツ=== -->
+<main>
+<!-- ★ここが重要（導入文SEO強化） -->
+<section>
+<h2>はじめに</h2>
+<p>
+<strong>「html」言語</strong>でホームページを作成する方法を学びます。
+</p>
+</section>
+<hr>
+
+<section>
+<h2>第１章 html言語を用いたホームページの雛形</h2>
+<h3>(1) index.htmlの雛形</h3>
+<img src="index-1.jpg" alt="indexの例-1"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="index-2.jpg" alt="indexの例-2"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="index-3.jpg" alt="indexの例-3"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="index-4.jpg" alt="indexの例-4"
+style="max-width:1000px; width:100%; height:auto;">
+
+<h3>(2) index.htmlに記入すること</h3>
+<p>
+(1) (title)に、「タイトル」を記入する。<br>
+(2) (meta name="description" content="〇〇、〇〇。")<br>
+SEDであり、検索数増加のために。<br>
+(3) (header class="hero")に、変化する「ヘッダー画像」を入れる。<br>
+(4) (div class="hero-text")に、ヘッダー画像に共通して表示するテキストを入れる。<br>
+例えば、(h1)〇〇〇〇(/h1)と、(p)〇〇サブタイトル〇〇(/p)など。<br>
+(5) (main)の（div class="lead"）に、metaの文章を入れる。<br>
+(6) index.htmlの画面に、「メニュー」を作るなら、(nav)(ul class="menu")に、メニューを作る。<br>
+(7) (footer）に、©️〇〇などを入れる。
+</p>
+
+<h3>(3) リンクページの雛形</h3>
+<img src="link-page-1.jpg" alt="リンクの例-1"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="link-page-2.jpg" alt="リンクの例-2"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="link-page-3.jpg" alt="リンクの例-3"
+style="max-width:1000px; width:100%; height:auto;">
+
+<h3>(4) リンクページに記入するための注意点</h3>
+<p>
+(1) 図を入れる＝(img src="figure1.jpg" alt="図１" style="max-width:500-800px; width:100%; height:auto;")で。<br>
+(2) コラム、ボックス、ノートの作り方＝(div class="box")、(strong)〇〇(/strong)、(p)を入れない方が良い。(/div)で終わる。<br>
+(3) 番号付き箇条書き＝(ol)、(li)〇〇１(/li)、(li)〇〇２(/li)、(/ol)と書く。<br>
+(4) 点付き箇条書き＝(ul)<br>
+(5) 表の作り方＝（table）、(tr)(th)〇〇(/th)(th)〇〇(/th)(/tr)表題、(tr)(td)〇〇(/td)(td)〇〇(/td)(/tr)内容など、(/table)で終わる。<br>
+(6) 内部リンクする場合＝(a href="---.html")〇〇(/a)も参考になります。など。
+</p>
+</section>
+<hr>
+
+<section>
+<h2>第２章　Style.cssの雛形</h2>
+<img src="style-css-1.jpg" alt="CSSの例-1"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="style-css-2.jpg" alt="CSSの例-2"
+style="max-width:1000px; width:100%; height:auto;">
+<img src="style-css-3.jpg" alt="CSSの例-3"
+style="max-width:1000px; width:100%; height:auto;">
+</section>
+<hr>
+
+<section>
+<h2>第３章　その他の注意事項</h2>
+<p>
+(1) ファイル名には「日本語」を使わない。（サーバーで文字化けする可能性あり）<br>
+(2) 画像名に空白を入れない。（good_sleep.jpgなどに！）<br>
+(3) 拡張子を統一（.jpg、.png、.html、.cssなど）<br>
+(4) 画像サイズは「横幅基準」で管理する。（ヘッダー:1200px前後、通常画像：600-800px、図表：500-700px）<br>
+(5) htmlの文法チェックには「W3C Validator」、cssチェックには「W3C CSS Validator」を使いましょう。<br>
+(6) 公開日等、月日の更新を忘れないように。
+</p>
+</section>
+<hr>
+
+<section>
+<h2>メモ</h2>
+<p>
+・ GitHubは無料で利用可能であり、容量は1GB程度。<br>
+・ Html、css、javaScriptをそのまま公開できる。<br>
+・ GitHubがバックアップの役割も果たしてくれる。
+</p>
+</section>
+
+<hr>
+
+<div class="back-link">
+
+<a href="index.html">トップページに戻る</a>
+</div>
+
+</main>
+<footer>
+© 「重信」での農作業日記
+</footer>
+</body>
+</html>
