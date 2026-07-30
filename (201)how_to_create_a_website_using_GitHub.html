@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHubを使ったホームページの作製方法｜GitHubにホームページをアップする方法です</title>
+<meta name="description" content="GitHubという無料のサーバーにhtml等のデータを転送して、閲覧可能な状態を構築します。">
+<link rel="stylesheet" href="style.css">       <!-- style.cssを使う命令 -->
+</head>
+
+<body>
+<header>
+  <div class="header-inner">
+     <h1>GitHubを使ったホームページの作製方法｜GitHubにアップする方法です</h1>
+  </div>
+</header>
+
+<div class="container">                <!-- コンテナーに入れる、最後に</div>がある -->
+<div class="back-link">                 <!-- 「トップページに戻る」を入れる -->
+<a href="index.html">トップページに戻る</a>
+</div>
+
+<p class="small">
+公開日：2026年7月　｜　最終更新：2026年7月
+</p>
+<!-- ===メインコンテンツ=== -->
+<main>
+<!-- ★ここが重要（導入文SEO強化） -->
+<section>
+<h2>はじめに</h2>
+
+<p>
+<strong>「GitHub」</strong>という「無料のHP公開サービス」に、html等のデータを転送して、閲覧可能な状態を構築します。html、css、jpg等ファイルを公開できます。変更したファイルだけ更新できます。
+</p>
+</section>
+<hr>
+
+<section>
+<h2>第１章　GitHubに新しく登録する方法（GitHubアカウント作成）</h2>
+<h3>(1) Sign up</h3>
+<ol>
+<li>ブラウザで、https://github.comを開く</li>
+<li>右上にある「sign up（最初の場合）、sign in（登録済みの場合）」をクリックす</l>
+</ol>
+
+<h3>(2) アカウントを作成する</h3>
+<p><strong>入力画面</strong></p>
+<ol>
+<li>「e-mail address」→「continue」</li>
+<li>「password」→「continue」</li>
+<li>「username」：ABC、公開URL「https://ABC.github.io/〇〇〇〇/」となる。→「continue」</li>
+<li>メール確認：(a)メール内に「verify email address」があれば、クリックして完了<br>
+(b)メール内に「vertification code」があれば、6桁数字を入力画面の枠に入力して → 「完了?」</li>
+</ol>
+
+<h3>(3) ログインする</h3>
+<p><strong>「https://github.com」</strong>に入る</p>
+<ol>
+<li>右上の「sign in」をクリックする</li>
+<li>email（またはusername）、passwordを入力する</li>
+</ol>
+
+<h3>(4) Home画面で「Repository」（保管庫）を作る</h3>
+<a><strong>初めての場合</strong></p>
+<ol>
+<li>「create repository」か「start a project」が表示される</li>
+<li>右上の「 + 」をクリックする</li>
+<li>「New repository」を選択する</li>
+<li>「repository name」を決める</li>
+<li>「poblic」を選択する</li>
+<li>「create repository」をクリックする</li>
+<p>「Home画面」にrepositoryが作成されているので、次回からは、その名前のrepositoryを選びます。</p>
+</section>
+<hr>
+
+<h2>第２章　初めてHPを公開する方法</h2>
+<h3>(1) HPのhtml、css、jpgなどを準備する</h3>
+<p>Macに「HP用のフォルダ」を作り、「index.html、style.css、101.html、102.html、jpg」などを入れておきます。<br>
+（注意）トップページは必ず「index.html」という名前にすること。</p>
+
+<h3>(2)ファイルをアップロード</h3>
+<p><strong>「リポジトリ画面」</strong>で</p>
+<ol>
+<li>右上の「add file」を押し、「upload files」を開く</li>
+<li>Mac内の「HP用フォルダ」から、全部のファイルをドラッグ＆ドロップする</li>
+<li>「commit changes」を押す</li>
+</ol>
+
+<h3>(3) GitHub pagesを有効にする</h3>
+<p><strong>新しくリポジトリを作製した場合には必須！</strong></p>
+<ol>
+<li>作製したリポジトリを開く（その名前のところをクリックする）</li>
+<li>上の方に、「code、issues、pull requests、action、---- settings」が並んでいるので、「settings」をクリックする</li>
+<li>左側の「pages」のsettingsを開くと、「general、access、code and automation、--- pages」が並んでいるので、「pages」をクリックする</li>
+<li>「Build and development」という見出しがあり、その中に「source」がある。「Deploy from a branch」を選択する。<br>
+（意味は、「Branchの内容をホームページとして公開する」ということです）</li>
+<li>下に「Branch」という項目が出るので、「main」を選びます。<br>
+（意味は、「mainという保存場所を公開します」ということです）</li>
+<li>その右側に「/(root)」があります。<br>
+（意味は、「リボジトリの一番上のフォルダを公開する」ということです）<br>
+「(root)」を選びます。</li>
+<li>最後に、「save」を押します（これで公開されます！）</li>
+<li>saveを押した後、数十秒すると、画面に「Your site is live at https://----」と表示されます。<br>
+これで、HPは公開されました</li>
+</ol>
+</section>
+<hr>
+
+<section>
+<h2>第３章　表示の確認</h2>
+<p>MacやiPhoneで、HPを確認する。<br>
+リンク、画像、メニューなどを確認する。</p>
+<p><strong>「ブックマーク」や「お気に入り」登録</strong></p>
+<p>Macでは、最初の画面を「ブックマーク」しておくこと<br>
+iPhoneでは、「お気に入り」登録しておくこと</p>
+</section>
+<hr>
+
+<section>
+<h2>第４章　HPを更新する方法</h2>
+<p>htmlを修正したら、htmlファイルだけを、cssを修正したら、style.cssだけを、画像を修正したら、jpgだけを、新しいhtmlページを作製したら、そのhtmlだけを、追加します。</p>
+
+<h3>変更方法</h3>
+<ol>
+<li>「repository」画面を開き、右上の「add file」を押し、「upload files」を開く</li>
+<li> 修正したファイルだけをドラッグする</li>
+<li>「commit changes」をクリックする</li>
+<li> １から２分待つと、ブラウザで更新を確認できる</li>
+</ol>
+</section>
+<hr>
+
+<section>
+<h2>メモ</h2>
+<p>
+・ 無料で利用可能であり、容量は1GB程度。<br>
+・ Html、css、javaScriptをそのまま公開できる。<br>
+・ GitHubがバックアップの役割も果たしてくれる。
+</p>
+</section>
+
+<hr>
+
+<div class="back-link">
+
+<a href="index.html">トップページに戻る</a>
+</div>
+
+</main>
+<footer>
+© 「重信」での農作業日記
+</footer>
+</body>
+</html>
